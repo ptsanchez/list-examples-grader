@@ -23,3 +23,6 @@ if ! [[ $var == *"ListExamples.java"* ]]
         exit
 fi 
 echo "ListExamples.java found"
+
+cp $var ../grading-area
+cp $var2 /grading-area
