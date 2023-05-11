@@ -16,11 +16,10 @@ echo 'Finished cloning'
 # tests
 
 cd student-submission
-if [[ -f ListExamples.java ]]
+var=$(find . -type f -name "ListExamples.java")
+if ! [[ $var == *"ListExamples.java"* ]]
     then
-        echo "found ListExamples.java"
-        #do something
-    else
         echo "ListExamples.java not found"
         exit
 fi 
+echo "ListExamples.java found"
