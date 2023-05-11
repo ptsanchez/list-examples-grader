@@ -14,3 +14,13 @@ echo 'Finished cloning'
 
 # Then, add here code to compile and run, and do any post-processing of the
 # tests
+
+cd student-submission
+if [[ -f ListExamples.java ]]
+    then
+        echo "found ListExamples.java"
+        #do something
+    else
+        echo "ListExamples.java not found"
+        exit
+fi 
